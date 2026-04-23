@@ -22,9 +22,9 @@ class ExtractSessionid:
                 print(f'[{self.purple}+{self.reset}] Successfully Found File ( account.txt )')
                 print(f'[{self.purple}+{self.reset}] Sleep : ', end='')
                 self.sleep = int(input())
-                self.ExtractSessionidFile('account.txt', self.sleep)
+                self.ExtractSessionidFile('accounts.txt', self.sleep)
             except FileNotFoundError:
-                self.ExtractSessionidFile('account.txt', 0)
+                self.ExtractSessionidFile('accounts.txt', 0)
         elif self.number == 2:
             print(f'[{self.purple}+{self.reset}] Email : ', end='')
             self.email = input()
